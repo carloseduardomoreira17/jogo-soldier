@@ -10,6 +10,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Sin,
 		C3.Plugins.Keyboard,
 		C3.Plugins.Text,
+		C3.Plugins.Mouse,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.System.Acts.AddVar,
@@ -29,7 +30,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Behaviors.solid.Acts.SetEnabled,
-		C3.Plugins.System.Acts.GoToLayout
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked
 	];
 };
 self.C3_JsPropNameTable = [
@@ -61,6 +63,9 @@ self.C3_JsPropNameTable = [
 	{Texto: 0},
 	{Sprite11: 0},
 	{ChatGPTImage26DeMaiDe202511_05_: 0},
+	{Sprite12: 0},
+	{Sprite13: 0},
+	{Mouse: 0},
 	{pontos: 0},
 	{moedas: 0}
 ];
@@ -86,5 +91,8 @@ self.InstanceType = {
 	Sprite10: class extends self.ISpriteInstance {},
 	Texto: class extends self.ITextInstance {},
 	Sprite11: class extends self.ISpriteInstance {},
-	ChatGPTImage26DeMaiDe202511_05_: class extends self.ISpriteInstance {}
+	ChatGPTImage26DeMaiDe202511_05_: class extends self.ISpriteInstance {},
+	Sprite12: class extends self.ISpriteInstance {},
+	Sprite13: class extends self.ISpriteInstance {},
+	Mouse: class extends self.IInstance {}
 }
